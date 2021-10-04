@@ -1,0 +1,1259 @@
+/*Usuario: Jorge González De La Miar Fecha: 10 de Septiembre de 2021*/
+/*Hoja de Estilos CSS*/
+
+body {font-family: arial, helvetica, sans-serif;
+		background:url("../imagenes/fondocamuflaje.png")repeat;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	 }
+
+html{
+	 height: 100%;
+    }
+
+*{box-sizing: border-box;}
+
+/*Div contenedor del contenido de todas las páginas*/
+#cuerpo{
+		border:#59622b 3px solid;
+		margin:0px auto;
+		background:white;
+		padding:0px;
+	  }
+
+
+/*Encabezado para todas las páginas*/				   
+header {
+		background: #59622b;
+	   }
+
+
+/*Color de fondo para el menu principal*/
+.menu{
+	  background:#59622b;
+     }
+
+		   
+
+/*Colores para enlaces del menu principal*/
+li a{
+	 color: white !important;
+	 font-weight: bold;
+	 text-decoration: none !important;
+    }  
+					  
+li a:hover{
+		   background:olive !important;
+	      }	
+
+		  .navbar-brand{
+			font-size: 1rem !important;
+			font-weight: bold !important;
+			color: white;
+		   }
+
+/*color para enlace imagen de inicio de menu*/		   
+.navbar-brand:hover{
+				    background: olive;
+				   }
+				 
+a.navbar-brand{
+			   color:white;
+			  }		
+
+/*Imagen de inicio para el menú*/
+.logo{
+		width:50px;
+   	 }
+
+/*Icono de inicio de Sesion para el menú*/
+.iconperfil {
+			font-size: 1.25rem !important;
+		    color: white;
+		    }
+
+/*Estilos para las Migas de pan */
+.breadcrumb {
+			 background-color: #59622b !important;
+   			} 
+
+li.breadcrumb-item {
+		   			color:white !important;
+		   		    text-decoration: none !important;
+		   		   } 
+
+li a.breadcrumb-item:hover{
+							background:olive !important;
+					      } 
+
+.breadcrumb-item.active {
+						  background: olivedrab;
+						}
+
+/*Color de letra para todas las páginas*/
+.olive{
+	   color:#59622b;
+	   font-weight: bold;
+      }
+   
+h1{
+	color:#59622b;
+	margin-left: 10px;
+  }
+h2{color:#59622b;
+   margin:10px;
+   font-size:1.75rem;
+   font-weight:bold;
+   text-align: center;
+   }
+
+.bienvenido{	
+				color:#59622b;
+				font-size:1.75rem;
+				font-weight:bold;
+				margin-left: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+/*p de la pagina index inicio*/
+.bienvenida{
+			color:#59622b;
+			font-size: 1em;
+			font-weight: bold;  
+			margin-left: 10px;
+		   }
+
+/*Carrusel de Imagenes*/
+.carousel-inner img {
+					  width: 100%;
+					  height: 100%;
+					}
+/*Boton de mas informacion del carrusel de imagenes*/
+.btn{
+	 background:#59622b;
+	 color:#ffffff;
+	}
+		
+/* Galeria de fotos de Productos*/	
+.galeria .row{
+			   margin:5px auto;
+	  		 }
+
+.galeria .col{
+		      margin-bottom: 20px;
+		     }
+
+/*color del figcacption de letra de precio*/
+.piefoto{
+		 color:#59622b;
+		 font-weight: bold;
+		 margin-left:60px;
+		}
+
+/* pagina de Incicio div de precio del producto*/
+.precio {
+		 background: #59622b;
+		 color: white;
+		 font-weight: bold;
+		 width: 55%;
+		 display: inline-block;
+		 height: 25px !important;
+		 text-align: center;
+		 border-radius: 5px;
+		}
+/*TIENDA html E INICIAR SESION*/
+/*boton ver y comprar productos, iniciar sesion*/
+a.btn.btn-sm.botontienda {
+							font-weight: bold;
+							margin-bottom: 20px;
+						 }
+
+a.btn.btn-sm.botontienda:hover {
+								 background:olive;
+							   }
+
+/*INICIO SESION ASPX*/
+/*FORMULARIOS*/
+/*FORMULARIO INICIO SESION*/
+.formInicioSesion {
+					border: 2px solid #59622b;
+					margin-bottom: 40px;
+				  }
+
+/*CAMPOS FORMULARIO INICIO SESION*/
+input#TextUsuario {
+					margin: 15px 6px 6px;
+					border: 1px solid #59622b;
+				  }
+
+input#Textcontrasena {
+						margin-left: 6px;
+						margin-bottom: 6px;
+						border: 1px solid #59622b;
+					 }
+
+input#TextRepitecontrasena {
+						     margin-left: 6px;
+						     margin-bottom: 6px;
+						     border: 1px solid #59622b;
+						   }
+
+/*BOTON INICIAR SESION*/
+input#BtnInicioSesion {
+						background: #59622b;
+						color: white;
+						font-weight: bold;
+						border-radius: 5px;
+						margin-bottom:10px;
+					  }
+
+input#BtnInicioSesion:hover {
+							  background: olive;
+							}
+
+/*FORMULARIO REGISTRO CLIENTE*/
+.formRegistroCliente {
+						border: 2px solid #59622b;
+						margin-bottom: 40px;
+					}
+
+/*CAMPOS REGISTRO CLIENTE*/
+input#TextDni {
+				width: 30%;
+				margin: 15px 6px 15px;
+				border: 1px solid #59622b;
+			 }
+
+input#TextNombre {
+					width: 30%;
+					margin-left: 6px;
+					margin-bottom: 15px;
+					border: 1px solid #59622b;
+				}
+
+input#TextApellido1 {
+						width: 30%;
+						margin-left: 6px;
+						margin-bottom: 15px;
+						border: 1px solid #59622b;
+					}
+
+input#TextApellido2 {
+						width: 30%;
+						margin-left: 6px;
+						margin-bottom: 15px;
+						border: 1px solid #59622b;
+					}
+
+input#TextDireccion {
+						width: 52%;
+						margin-left: 6px;
+						margin-bottom: 15px;
+						border: 1px solid #59622b;
+					}
+
+input#TextCiudad {
+					width: 30%;
+					margin-left: 6px;
+					margin-bottom: 15px;
+					border: 1px solid #59622b;
+				}
+
+input#TextProvincia {
+						width: 30%;
+						margin-left: 6px;
+						margin-bottom: 15px;
+						border: 1px solid #59622b;
+					}
+
+input#TextCodigoPostal {
+						 width: 30%;
+						 margin-left: 6px;
+						 margin-bottom: 15px;
+						 border: 1px solid #59622b;
+					  }
+
+input#TextTelefono {
+					 width: 30%;
+					 margin-left: 6px;
+					 margin-bottom: 15px;
+					 border: 1px solid #59622b;
+					}
+
+input#TextEmail {
+				  width: 30%;
+				  margin-left: 6px;
+				  margin-bottom: 15px;
+				  border: 1px solid #59622b;
+				}
+
+input#TextNombreUsuario {
+						  width: 30%;
+						  margin-left: 6px;
+						  margin-bottom: 15px;
+						  border: 1px solid #59622b;
+						}
+
+input#TextPassword {
+					 width: 30%;
+					 margin-left: 6px;
+					 margin-bottom: 15px;
+					 border: 1px solid #59622b;
+					}
+
+input#ChkPolitica {
+					   margin-left: 6px;
+					   margin-bottom: 15px;
+					   border: 1px solid #59622b;
+					}
+
+/*BOTON REGISTRARSE*/
+input#BtnRegistrarse {
+						background: #59622b;
+						color: white;
+						font-weight: bold;
+						border-radius: 5px;
+						margin-bottom: 10px;
+					}
+
+input#BtnRegistrarse:hover {
+							 background: olive;
+							}
+
+.validacion {
+			 text-align: center;
+			}
+
+
+/*TIENDA ASPX*/
+/*MENU: BOTONES: REALIZAR PEDIDO, Y CANCELAR PEDIDO, DIV CONTENEDOR DEL GRID DATOS*/
+#contieneDatosPedido {
+					  border: #59622b 3px solid;
+					  margin-bottom:40px;
+					 }
+
+input#TextIDFECHA {
+					margin-right: 20px;
+					margin-bottom:10px;
+				 }
+
+input#TextIDPEDIDO {
+					 margin-right: 20px;
+					 margin-bottom: 10px;
+					}
+
+
+input#TextIDCLIENTE {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+
+input#TextDNI {
+				margin-right: 20px;
+				margin-bottom: 10px;
+			 }
+
+input#TextNOMBRE {
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+
+input#TextAPELLIDO1 {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+
+input#TextAPELLIDO2 {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+
+input#TextDIRECCCION {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+
+input#TextCIUDAD {
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+
+input#TextPROVINCIA {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					}
+
+input#TextCODIGOPOSTAL {
+						margin-right: 20px;
+						margin-bottom: 10px;
+					  }
+
+input#TextTELEFONO {
+					 margin-right: 20px;
+					 margin-bottom: 10px;
+				   }
+
+input#TextNUMERO_REFERENCIA {
+								margin-right: 5px;
+								margin-bottom: 10px;
+							}
+
+input#TextNOMBREPRODUCTO {
+							margin-right: 5px;
+							margin-bottom: 10px;
+						}
+
+input#TextPRECIO {
+					margin-right: 10px;
+					margin-bottom: 10px;
+				}
+
+input#TextTOTAL {
+				margin-right: 20px;
+				margin-bottom: 10px;
+			  }
+
+
+
+input#BtnRealizaPedido {
+							margin-left: 20px;
+							margin-right: 20px;
+							margin-bottom: 10px;
+						}
+
+input#BtnCancelaPedido {
+						 margin-bottom: 10px;
+						}
+
+
+
+
+.text-success {
+	color: olivedrab !important;
+	font-weight: bold !important;
+}
+
+.card{
+	  margin-bottom:20px;
+    }
+
+/*campos drowList*/
+select#DropDownList1ColorCartucheraDobleBomBoscoso {
+													width: 100%;
+													margin-bottom:10px;
+												   }
+
+select#DropDownList2StockCartucheraDobleBomBoscoso {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+select#DropDownList1ColorCartucheraDobleBomAridoPixel {
+														width: 100%;
+														margin-bottom: 10px;
+													 }
+
+select#DropDownList2StockCartucheraDobleBomAridoPixel {
+														width: 100%;
+														margin-bottom: 10px;
+													 }
+
+select#DropDownList1ColorRiñoneraBoscoso {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList2StockRiñoneraBoscoso {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+select#DropDownList1ColorRiñoneraAridoPixel {
+												width: 100%;
+												margin-bottom: 10px;
+											}
+
+
+select#DropDownList2StockRiñoneraAridoPixel {
+												width: 100%;
+												margin-bottom: 10px;
+											}
+
+
+select#DropDownList1ColorFundaGafasBoscoso {
+												width: 100%;
+												margin-bottom: 10px;
+											}
+
+
+select#DropDownList2StockFundaGafasBoscoso {
+											 width: 100%;
+											 margin-bottom: 10px;
+										  }
+
+
+select#DropDownList1ColorFundaGafasVerde {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList2StockFundaGafasVerde {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList1ColorFundaGafasNegro {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList2StockFundaGafasNegro {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList1ColorFundaGafasAridoPixel {
+												width: 100%;
+												margin-bottom: 10px;
+											  }
+
+
+select#DropDownList2StockFundaGafasAridoPixel {
+												 width: 100%;
+												 margin-bottom: 10px;
+											  }
+
+
+select#DropDownList1ColorFundaNavajaMultiBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												 }
+
+
+select#DropDownList2StockFundaNavajaMultiBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												 }
+
+
+select#DropDownList1ColorFundaNavajaMultiVerde {
+												  width: 100%;
+												  margin-bottom: 10px;
+												}
+
+
+select#DropDownList2StockFundaNavajaMultiVerde {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+select#DropDownList1ColorFundaNavajaMultiNegro {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+select#DropDownList2StockFundaNavajaMultiNegro {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+
+select#DropDownList1ColorFundaNavajaMultiAridoPixel {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+select#DropDownList2StockFundaNavajaMultiAridoPixel {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+
+select#DropDownList1ColorFundaAnchaTlfnoBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+select#DropDownList2StockFundaAnchaTlfnoBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+
+select#DropDownList1ColorFundaAnchaTlfnoVerde {
+												width: 100%;
+												margin-bottom: 10px;
+											  }
+
+
+select#DropDownList2StockFundaAnchaTlfnoVerde {
+												width: 100%;
+												margin-bottom: 10px;
+											  }
+
+
+select#DropDownList1ColorFundaAnchaTlfnoNegro {
+												width: 100%;
+												margin-bottom: 10px;
+											  }
+
+
+select#DropDownList2StockFundaAnchaTlfnoNegro {
+												 width: 100%;
+												 margin-bottom: 10px;
+											  }
+
+select#DropDownList1ColorFundaBrujulaBoscoso {
+												width: 100%;
+												margin-bottom: 10px;
+											 }
+
+
+select#DropDownList2StockFundaBrujulaBoscoso {
+												width: 100%;
+												margin-bottom: 10px;
+											}
+
+
+select#DropDownList1ColorFundaBrujulaVerde {
+												width: 100%;
+												margin-bottom: 10px;
+											}
+
+select#DropDownList2StockFundaBrujulaVerde {
+											 width: 100%;
+											 margin-bottom: 10px;
+											}
+
+
+select#DropDownList1ColorFundaBrujulaNegro {
+											 width: 100%;
+											 margin-bottom: 10px;
+											}
+
+
+select#DropDownList2StockFundaBrujulaNegro {
+											 width: 100%;
+											 margin-bottom: 10px;
+										   }
+
+select#DropDownList1ColorBrujulaAridoPixel {
+											 width: 100%;
+											 margin-bottom: 10px;
+											}
+
+select#DropDownList2StockBrujulaAridoPixel {
+											 width: 100%;
+											 margin-bottom: 10px;
+											}
+
+select#DropDownList1ColorFundaCubierto4PiezasBoscoso {
+														width: 100%;
+														margin-bottom: 10px;
+													  }
+
+
+select#DropDownList2StockFundaCubierto4PiezasBoscoso {
+														width: 100%;
+														margin-bottom: 10px;
+													  }
+
+
+select#DropDownList1ColorFundaCubierto4PiezasVerde {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+
+select#DropDownList2StockFundaCubierto4PiezasVerde {
+														width: 100%;
+														margin-bottom: 10px;
+													 }
+
+
+select#DropDownList1ColorFundaPistolaMultiPleBoscoso {
+													   width: 100%;
+													   margin-bottom: 10px;
+													 }
+
+
+select#DropDownList2StockFundaPistolaMultiPleBoscoso {
+														width: 100%;
+														margin-bottom: 10px;
+													  }
+
+
+select#DropDownList1ColorFundaPistolaMultiPleNegro {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+select#DropDownList2StockFundaPistolaMultiPleNegro {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+select#DropDownList1ColorFundaPistolaMultiPleAridoPixel {
+														  width: 100%;
+														  margin-bottom: 10px;
+														}
+
+select#DropDownList2StockFundaPistolaMultiPleAridoPixel  {
+															width: 100%;
+															margin-bottom: 10px;
+														 }
+
+
+
+select#DropDownList1ColorFundaPistolaLegionGuardiaCiv {
+														width: 100%;
+														margin-bottom: 10px;
+													  }
+
+
+select#DropDownList2StockFundaPistolaLegionGuardiaCiv {
+														width: 100%;
+														margin-bottom: 10px;
+													   }
+
+
+select#DropDownList1ColorExtensorPistolaAridoPixel {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+
+select#DropDownList2StockExtensorPistolaAridoPixel {
+													 width: 100%;
+													 margin-bottom: 10px;
+													}
+
+
+
+select#DropDownList1ColorFundaCargadorPistolaMultiNegro {
+														  width: 100%;
+														  margin-bottom: 10px;
+														}
+
+
+select#DropDownList2StockFundaCargadorPistolaMultiNegro {
+														  width: 100%;
+														  margin-bottom: 10px;
+														}
+
+
+select#DropDownList1ColorFundaCargadorPistolaMultiAridoPixel {
+																width: 100%;
+																margin-bottom: 10px;
+															}
+
+
+
+select#DropDownList2StockFundaCargadorPistolaMultiAridoPixel {
+															   width: 100%;
+															   margin-bottom: 10px;
+															 }
+
+
+select#DropDownList1ColorCarteraCamilleroBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												 }
+
+
+select#DropDownList2StockCarteraCamilleroBoscoso {
+													width: 100%;
+													margin-bottom: 10px;
+												 }
+
+
+
+
+select#DropDownList1ColorExtensorCartucherasDoblesBoscoso {
+															 width: 100%;
+															 margin-bottom: 10px;
+														  }
+
+
+select#DropDownList2StockExtensorCartucherasDoblesBoscoso {
+															 width: 100%;
+															 margin-bottom: 10px;
+														  }
+
+
+select#DropDownList1ColorExtensorCartucherasDoblesAridoPixel {
+																width: 100%;
+																margin-bottom: 10px;
+															  }
+
+
+select#DropDownList2StockExtensorCartucherasDoblesAridoPixel {
+															   width: 100%;
+															   margin-bottom: 10px;
+															 }
+
+
+select#DropDownList1ColorMochilaSoporteARespBoscosoPixel {
+															width: 100%;
+															margin-bottom: 10px;
+														  }
+
+
+select#DropDownList2StockMochilaSoporteARespBoscosoPixel {
+															width: 100%;
+															margin-bottom: 10px;
+														 }
+
+
+select#DropDownList1ColorCenidorBripacBoscosoOscuro {
+													   width: 100%;
+													   margin-bottom: 10px;
+													}
+
+
+select#DropDownList2StockCenidorBripacBoscosoOscuro {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+
+select#DropDownList1ColorCenidorBripacBoscosoClaro {
+														width: 100%;
+														margin-bottom: 10px;
+												   }
+
+
+
+select#DropDownList2StockCenidorBripacBoscosoClaro {
+													  width: 100%;
+													  margin-bottom: 10px;
+													}
+
+
+
+select#DropDownList1ColorCenidorBripacTerminalGarraVerde {
+															width: 100%;
+															margin-bottom: 10px;
+														  }
+
+
+select#DropDownList2CenidorBripacTerminalGarraVerde {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+select#DropDownList1ColorCenidorBripacTerminalGanchosVerde {
+															 width: 100%;
+															 margin-bottom: 10px;
+														   }
+
+
+select#DropDownList2StockCenidorBripacTerminalGanchosVerde {
+															  width: 100%;
+															  margin-bottom: 10px;
+															}
+
+
+select#DropDownList1CenidorBripacUmeTerminalGarraNegro {
+															width: 100%;
+															margin-bottom: 10px;
+														}
+
+
+
+select#DropDownList2StockCenidorBripacUmeTerminalGarraNegro {
+																width: 100%;
+																margin-bottom: 10px;
+															}
+
+
+select#DropDownList1ColorCenidorBripacTerminalGarraAridoPixel {
+																width: 100%;
+																margin-bottom: 10px;
+															  }
+
+
+
+select#DropDownList2StockCenidorBripacTerminalGarraAridoPixel {
+																 width: 100%;
+																 margin-bottom: 10px;
+															  }
+
+
+select#DropDownList1ColorCenidorPolicialNegro {
+													width: 100%;
+													margin-bottom: 10px;
+											 }
+
+
+select#DropDownList2StockCenidorPolicialNegro {
+												width: 100%;
+												margin-bottom: 10px;
+											 }
+
+select#DropDownList1ColorCenidorPolicialNegro130 {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+
+select#DropDownList2StockCenidorPolicialNegro130 {
+													width: 100%;
+													margin-bottom: 10px;
+												}
+
+
+select#DropDownList1ColorCinturonHebillaMetalUmeNegro {
+														 width: 100%;
+													     margin-bottom: 10px;
+													  }
+
+
+select#DropDownList2StockCinturonHebillaMetalUmeNegro {
+														  width: 100%;
+														  margin-bottom: 10px;
+														}
+
+
+select#DropDownList1ColorCinturonVelcroVerde {
+											     width: 100%;
+												 margin-bottom: 10px;
+											  }
+
+
+select#DropDownList2StockCinturonVelcroVerde {
+												width: 100%;
+												margin-bottom: 10px;
+											 }
+
+
+select#DropDownList1ColorCorreaPortafusilHKG36Negro {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+
+select#DropDownList2StockCorreaPortaFusilHKG36Negro {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+
+select#DropDownList1ColorFundaCantimploraBorreguitoVerde {
+															width: 100%;
+															margin-bottom: 10px;
+														  }
+
+
+select#DropDownList2StockFundaCantimploraBorreguitoVerde {
+															width: 100%;
+														    margin-bottom: 10px;
+														  }
+
+select#DropDownList1ColorCantimploraVerde {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList2StockCantimploraVerde {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+select#DropDownList1ColorCantimplorArido {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList2StockCantimploraArido {
+										    width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList1ColorCacilloAceroInox {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList2StockCacilloAceroInox {
+											  width: 100%;
+											  margin-bottom: 10px;
+										   }
+
+
+select#DropDownList1ColorCubiertos3Piezas {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList2StockCubiertos3Piezas {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList1ColorNavajaMultiArmadaEsp {
+											 width: 100%;
+											 margin-bottom: 10px;
+										   }
+
+
+
+
+
+select#DropDownList2StockNavajaMultiArmadaEsp {
+												 width: 100%;
+												 margin-bottom: 10px;
+											  }
+
+
+
+
+select#DropDownList1ColorFundaCubiertoNavajaVerde {
+												   width: 100%;
+												   margin-bottom: 10px;
+											      }
+
+
+select#DropDownList2StockFundaCubiertoNavajaVerde {
+													width: 100%;
+													margin-bottom: 10px;
+										          }
+
+
+
+select#DropDownList1ColorFundaCubiertoNavajaNegra {
+														width: 100%;
+														margin-bottom: 10px;
+													}
+
+select#DropDownList2StockFundaCubiertoNavajaNegra {
+													width: 100%;
+													margin-bottom: 10px;
+												  }
+
+
+
+
+select#DropDownList1ColorFundaCubiertoNavajaAridoPixel {
+														  width: 100%;
+														  margin-bottom: 10px;
+														}
+
+
+select#DropDownList2StockFundaCubiertoNavajaAridoPixel {
+														 width: 100%;
+														  margin-bottom: 10px;
+													  }
+
+
+select#DropDownList1ColorPlatoMarmitaSartenAceroInox {
+														width: 100%;
+														margin-bottom: 10px;
+													  }
+
+
+
+select#DropDownList2StockPlatoMarmitaSartenAceroInox {
+														width: 100%;
+														margin-bottom: 10px;
+													 }
+
+
+select#DropDownList1ColorPlatoMarmitaSartenAluminioVerde {
+															width: 100%;
+															margin-bottom: 10px;
+														 }
+
+
+
+select#DropDownList2StockPlatoMarmitaSartenAluminioVerde {
+															width: 100%;
+															margin-bottom: 10px;
+														 }
+
+
+select#DropDownList1ColorMangueraFlexibleAluminioBidonGasolin {
+																  width: 100%;
+																  margin-bottom: 10px;
+															   }
+
+
+
+select#DropDownList2StockMangueraFlexibleAluminioBidonGasolin {
+																width: 100%;
+																margin-bottom: 10px;
+															  }
+
+
+select#DropDownList1ColorFastenerNegro1par {
+											 width: 100%;
+											 margin-bottom: 10px;
+										   }
+
+select#DropDownList2StockFastenerNegro1par {
+											width: 100%;
+											margin-bottom: 10px;
+										   }
+
+
+select#DropDownList1ColorBolsa5Fasteners {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList2StockBolsa5Fasteners {
+											width: 100%;
+											margin-bottom: 10px;
+										 }
+
+
+select#DropDownList1ColorGorraOfArmadaEsp {
+											width: 100%;
+											margin-bottom: 10px;
+										   }
+
+
+select#DropDownList2StockGorraOfArmadaEsp {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList1ColorAbrigoArmadaBrit {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList2StockAbrigoArmadaBrit {
+										    width: 100%;
+										    margin-bottom: 10px;
+										  }
+
+
+select#DropDownList1ColorLoteLiqProductos {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+select#DropDownList2StockLoteLiqProductos {
+											width: 100%;
+											margin-bottom: 10px;
+										  }
+
+
+
+
+/*/FIN DE TIENDA ASPX*/
+/*CONTACTO*/
+/*iconos de datos personales, ubicación, telefono, email*/
+.icono {
+	font-size: 1.25rem !important;
+	color: #59622b;
+}  
+
+.ListadoIconos{
+				margin: 5px auto;
+			  }
+
+.iconoMargen{
+			margin-left: 10px;
+			}
+.pasaRaton:hover{
+			   color:white;
+			   background: olivedrab;
+			  } 
+/*Color para los boton de apertura del outlook para el envío del email*/          
+.boton{
+	background: #59622b;
+	color:white;
+   }
+
+.boton:hover{
+		  color:olivedrab;
+		 }
+
+.botonContacto{
+			background: #59622b;
+			 color:white;
+			 
+			}
+
+.botonContacto:hover{
+				  color:olivedrab;
+				 }
+/*Pagina Contacto,  mapa, Contactar*/
+/*Mapa de Oviedo de google maps*/
+.mapa-wrapper{
+	width: 70%;
+   }
+
+.mapa-google{
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+  }
+
+.mapa-google iframe{
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 100%;
+		 }
+
+/* Estilos para la paginación (Número de páginas)*/   
+.page-item.active .page-link {
+								color: #fff !important;
+								background-color:#59622b!important;
+								border-color: #59622b !important;
+							 }
+
+a.page-link {
+			color: #59622b !important;
+			background-color: #fff !important;
+			border: 1px solid olivedrab !important;
+		  }
+
+
+.pagination{
+			margin:20px auto;
+			margin-right: 59px;
+		   }
+
+
+/*Pie de página*/
+footer{
+		background: #59622b;
+		text-align: left;
+		color: white;
+		margin: 34px auto;
+		padding: 10px;
+		margin:34px auto;
+		overflow: auto;
+	  }
+
+/*Iconos Facebook, Youtube, Whatsapp, Google Bussiness*/
+.redessociales{
+		   width:35px; 
+		  }	 
+
+.float-right {
+			  float: right!important;
+			  margin-right: 25px;
+		     }		  

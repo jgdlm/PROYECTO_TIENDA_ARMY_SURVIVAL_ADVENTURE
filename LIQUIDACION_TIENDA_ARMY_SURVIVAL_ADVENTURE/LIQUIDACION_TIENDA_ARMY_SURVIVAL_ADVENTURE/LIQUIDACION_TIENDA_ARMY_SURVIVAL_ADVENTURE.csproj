@@ -1,0 +1,439 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2697A74B-DE5C-4791-B89B-A93A46A0FABE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIQUIDACION_TIENDA_ARMY_SURVIVAL_ADVENTURE</RootNamespace>
+    <AssemblyName>LIQUIDACION_TIENDA_ARMY_SURVIVAL_ADVENTURE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44313</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CondicionesGeneralesCompra.html" />
+    <Content Include="Contacto.html" />
+    <Content Include="css\estilos.css" />
+    <Content Include="dist\css\lightbox.css" />
+    <Content Include="dist\css\lightbox.min.css" />
+    <Content Include="dist\images\close.png" />
+    <Content Include="dist\images\loading.gif" />
+    <Content Include="dist\images\next.png" />
+    <Content Include="dist\images\prev.png" />
+    <Content Include="dist\js\lightbox-plus-jquery.js" />
+    <Content Include="dist\js\lightbox-plus-jquery.min.js" />
+    <Content Include="dist\js\lightbox.js" />
+    <Content Include="dist\js\lightbox.min.js" />
+    <Content Include="Factura.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="imagenes\ABRIGO DE LA ARMADA BRITÁNICA CON FORRO DESMONTABLE %282%29.jpg" />
+    <Content Include="imagenes\ABRIGO DE LA ARMADA BRITÁNICA CON FORRO DESMONTABLE %283%29.jpg" />
+    <Content Include="imagenes\ABRIGO DE LA ARMADA BRITÁNICA CON FORRO DESMONTABLE.jpg" />
+    <Content Include="imagenes\abrigopequena.jpg" />
+    <Content Include="imagenes\airsoft.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 BOSCOSA NÚMERO REFERENCIA DEM 3 %282%29.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 BOSCOSA NÚMERO REFERENCIA DEM 3 %283%29.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 BOSCOSA NÚMERO REFERENCIA DEM 3.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 50 %282%29.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 50 %286%29.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 50.jpg" />
+    <Content Include="imagenes\BOLSA DORSAL CON MUELLE %28RIÑONERA%29 ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\CACILLO ACERO INOXIDABLE NÚMERO REFERENCIA DEM 64 %282%29.jpg" />
+    <Content Include="imagenes\CACILLO ACERO INOXIDABLE NÚMERO REFERENCIA DEM 64.jpg" />
+    <Content Include="imagenes\CACILLO ACERO INOXIDABLE pequena.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC VERDE NÚMERO REFERENCIA DEM 62 %282%29.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC VERDE NÚMERO REFERENCIA DEM 62.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC VERDE pequena.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC ÁRIDA NÚMERO REFERENCIA DEM 63 %282%29.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC ÁRIDA NÚMERO REFERENCIA DEM 63.jpg" />
+    <Content Include="imagenes\CANTIMPLORA PVC ÁRIDA pequena.jpg" />
+    <Content Include="imagenes\CARTERA DE CAMILLERO BOSCOSO NÚMERO DE REFERENCIA DEM 13 %282%29.jpg" />
+    <Content Include="imagenes\CARTERA DE CAMILLERO BOSCOSO NÚMERO DE REFERENCIA DEM 13 %283%29.jpg" />
+    <Content Include="imagenes\CARTERA DE CAMILLERO BOSCOSO NÚMERO DE REFERENCIA DEM 13.jpg" />
+    <Content Include="imagenes\CARTERA DE CAMILLERO BOSCOSO pequena.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS BOSCOSO NÚMERO DE REFERENCIA DEM 2 %282%29.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS BOSCOSO NÚMERO DE REFERENCIA DEM 2 %283%29.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS BOSCOSO NÚMERO DE REFERENCIA DEM 2 %284%29.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS BOSCOSO NÚMERO DE REFERENCIA DEM 2.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS BOSCOSO pequena.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 49 %282%29.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 49 %283%29.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 49.jpg" />
+    <Content Include="imagenes\CARTUCHERA DOBLE HK G-36 CON BOMBERAS ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO CLARO pequena.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO NÚMERO REFERENCIA DEM 12 %282%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO NÚMERO REFERENCIA DEM 12 %283%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO NÚMERO REFERENCIA DEM 12 %284%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO NÚMERO REFERENCIA DEM 12.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC CON TERMINAL DE GARRA BOSCOSO OSCURO pequena.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC VERDE %28CON TERMINAL DE GANCHOS%29 NÚMERO REFERENCIA DEM 22 %282%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC VERDE %28CON TERMINAL DE GANCHOS%29 NÚMERO REFERENCIA DEM 22 %283%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC VERDE %28CON TERMINAL DE GANCHOS%29 NÚMERO REFERENCIA DEM 22.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC VERDE %28CON TERMINAL DE GANCHOS%29 pequena.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC VERDE %28CON TERMINAL DE GARRA%29 NÚMERO REFERENCIA DEM 23.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC ÁRIDO PIXELADO %28CON TERMINAL DE GARRA%29 NÚMERO REFERENCIA DEM 46 %282%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC ÁRIDO PIXELADO %28CON TERMINAL DE GARRA%29 NÚMERO REFERENCIA DEM 46.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC ÁRIDO PIXELADO %28CON TERMINAL DE GARRA%29 pequena.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC, UME NEGRO %28CON TERMINAL DE GARRA%29 NÚMERO REFERENCIA DEM 25 %282%29.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC, UME NEGRO %28CON TERMINAL DE GARRA%29 NÚMERO REFERENCIA DEM 25.jpg" />
+    <Content Include="imagenes\CEÑIDOR BRIPAC, UME NEGRO %28CON TERMINAL DE GARRA%29 pequena.jpg" />
+    <Content Include="imagenes\CINTURÓN CON HEBILLA METÁLICA UME NEGRO pequena.jpg" />
+    <Content Include="imagenes\CINTURÓN CON HEBILLA METÁLICA UME NEGRO REFERENCIA DEM 27 %282%29.jpg" />
+    <Content Include="imagenes\CINTURÓN CON HEBILLA METÁLICA UME NEGRO REFERENCIA DEM 27.jpg" />
+    <Content Include="imagenes\CINTURÓN CORDURA HEBILLA  SEGURIDAD 50MM NEGRO pequena.jpg" />
+    <Content Include="imagenes\CINTURÓN CORDURA HEBILLA  SEGURIDAD 50MM NÚMERO REFERENCIA DEM 36 %282%29.jpg" />
+    <Content Include="imagenes\CINTURÓN CORDURA HEBILLA  SEGURIDAD 50MM NÚMERO REFERENCIA DEM 36 %283%29.jpg" />
+    <Content Include="imagenes\CINTURÓN CORDURA HEBILLA  SEGURIDAD 50MM NÚMERO REFERENCIA DEM 36.jpg" />
+    <Content Include="imagenes\CINTURÓN DE VELCRO VERDE NÚMERO REFERENCIA DEM 24 %282%29.jpg" />
+    <Content Include="imagenes\CINTURÓN DE VELCRO VERDE NÚMERO REFERENCIA DEM 24.jpg" />
+    <Content Include="imagenes\CINTURÓN DE VELCRO VERDE pequena.jpg" />
+    <Content Include="imagenes\CORREA PORTAFUSIL HK G-36 EXTENSIBLE MULTIUSO REGULABLE SENCILLO NEGRA NÚMERO REFERENCIA DEM 28.jpg" />
+    <Content Include="imagenes\CORREA PORTAFUSIL HK G-36 EXTENSIBLE MULTIUSO REGULABLE SENCILLO NEGRA pequena.jpg" />
+    <Content Include="imagenes\Correa Portafusil HK G-36 EXTENSIBLE MULTIUSO REGULABLE.jpg" />
+    <Content Include="imagenes\CUBIERTO 4 PIEZAS ACERO INOXIDABLE  %281%29.jpg" />
+    <Content Include="imagenes\CUBIERTO 4 PIEZAS ACERO INOXIDABLE  %282%29.jpg" />
+    <Content Include="imagenes\CUBIERTO 4 PIEZAS ACERO INOXIDABLE  %283%29.jpg" />
+    <Content Include="imagenes\CUBIERTO 4 PIEZAS ACERO INOXIDABLE pequena.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES BOSCOSO NÚMERO REFERENCIA DEM 11 %282%29.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES BOSCOSO NÚMERO REFERENCIA DEM 11 %283%29.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES BOSCOSO NÚMERO REFERENCIA DEM 11.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES BOSCOSO pequena.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 54 %282%29.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 54 %283%29.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 54.jpg" />
+    <Content Include="imagenes\EXTENSOR 2 CARTUCHERAS HK G-36 DOBLES ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\EXTENSOR DE FUNDA DE PISTOLA MULTIPLE MOD NUEVO CON FUNDA DE PISTOLA MULTIPLE ÁRIDO PIXELADO %282%29.jpg" />
+    <Content Include="imagenes\EXTENSOR DE FUNDA DE PISTOLA MULTIPLE MOD NUEVO CON FUNDA DE PISTOLA MULTIPLE ÁRIDO PIXELADO %283%29.jpg" />
+    <Content Include="imagenes\EXTENSOR DE FUNDA DE PISTOLA MULTIPLE MOD NUEVO CON FUNDA DE PISTOLA MULTIPLE ÁRIDO PIXELADO.jpg" />
+    <Content Include="imagenes\EXTENSOR DE FUNDA DE PISTOLA MULTIPLE MOD NUEVO MULTIPLE ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\EXTENSOR DE FUNDA DE PISTOLA MULTIPLE MOD NUEVO MULTIPLE ÁRIDO PIXELADO.jpg" />
+    <Content Include="imagenes\FASTENER NÚMERO DE REFERENCIA DEM 70 %282%29.jpg" />
+    <Content Include="imagenes\FASTENER NÚMERO DE REFERENCIA DEM 70 %283%29.jpg" />
+    <Content Include="imagenes\FASTENER NÚMERO DE REFERENCIA DEM 70.jpg" />
+    <Content Include="imagenes\FASTENER pequena.jpg" />
+    <Content Include="imagenes\favicon-96x96.png" />
+    <Content Include="imagenes\fondocamuflaje.png" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS BOSCOSO NÚMERO REFERENCIA DEM 6 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS BOSCOSO NÚMERO REFERENCIA DEM 6 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS BOSCOSO NÚMERO REFERENCIA DEM 6.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS BOSCOSO pequena.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS NEGRA NÚMERO REFERENCIA DEM 31 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS NEGRA NÚMERO REFERENCIA DEM 31 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS NEGRA NÚMERO REFERENCIA DEM 31.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS VERDE NÚMERO REFERENCIA DEM 18 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS VERDE NÚMERO REFERENCIA DEM 18 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS VERDE NÚMERO REFERENCIA DEM 18.jpg" />
+    <Content Include="imagenes\FUNDA ANCHA DE TELÉFONO O GPS VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE  CAMUFLAJE BOSCOSO %283%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE CAMUFLAJE BOSCOSO %282%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE CAMUFLAJE BOSCOSO %284%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE CAMUFLAJE BOSCOSO %285%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE CAMUFLAJE BOSCOSO.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE NÚMERO DE REFERENCIA DEM 20 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE NÚMERO DE REFERENCIA DEM 20 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE NÚMERO DE REFERENCIA DEM 20 %284%29.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE NÚMERO DE REFERENCIA DEM 20.jpg" />
+    <Content Include="imagenes\FUNDA CUBIERTO 4 PIEZAS ACERO INOXIDABLE VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS BOSCOSO NÚMERO REFERENCIA DEM 7 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS BOSCOSO NÚMERO REFERENCIA DEM 7 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS BOSCOSO NÚMERO REFERENCIA DEM 7.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS BOSCOSO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS NEGRA NÚMERO REFERENCIA DEM 32 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS NEGRA NÚMERO REFERENCIA DEM 32 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS NEGRA NÚMERO REFERENCIA DEM 32.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS VERDE NÚMERO REFERENCIA DEM 19 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS VERDE NÚMERO REFERENCIA DEM 19 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS VERDE NÚMERO REFERENCIA DEM 19.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 58 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 58 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 58 %284%29.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 58.jpg" />
+    <Content Include="imagenes\FUNDA DE BRUJULA Y ESPOSAS ÁRIDO PIXELADO pequena .jpg" />
+    <Content Include="imagenes\FUNDA DE CANTIMPLORA DE BORREGUITO VERDE NÚMERO REFERENCIA DEM 15 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CANTIMPLORA DE BORREGUITO VERDE NÚMERO REFERENCIA DEM 15 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CANTIMPLORA DE BORREGUITO VERDE NÚMERO REFERENCIA DEM 15.jpg" />
+    <Content Include="imagenes\FUNDA DE CANTIMPLORA DE BORREGUITO VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 36 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 36 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 36.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 53 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 53 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 53 %284%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 53.jpg" />
+    <Content Include="imagenes\FUNDA DE CARGADOR DE PISTOLA MULTIPLE ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA NEGRA NÚMERO REFERENCIA DEM 33 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA NEGRA NÚMERO REFERENCIA DEM 33 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA NEGRA NÚMERO REFERENCIA DEM 33.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA VERDE CON CUBIERTOS Y NAVAJA NÚMERO REFERENCIA DEM 21.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA VERDE NÚMERO REFERENCIA DEM 21 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA VERDE NÚMERO REFERENCIA DEM 21 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA VERDE NÚMERO REFERENCIA DEM 21.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 56 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 56 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA ÁRIDO PIXELADO NÚMERO REFERENCIA DEM 56.jpg" />
+    <Content Include="imagenes\FUNDA DE CUBIERTOS Y NAVAJA ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS ARIDO PIXELADO NÚMERO REFERENCIA DEM 57 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS ARIDO PIXELADO NÚMERO REFERENCIA DEM 57 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS ARIDO PIXELADO NÚMERO REFERENCIA DEM 57.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS ARIDO PIXELADO pequena .jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS BOSCOSA NÚMERO DE REFERENCIA DEM 4 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS BOSCOSA NÚMERO DE REFERENCIA DEM 4 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS BOSCOSA NÚMERO DE REFERENCIA DEM 4.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS BOSCOSA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS NEGRA NÚMERO REFERENCIA DEM 29 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS NEGRA NÚMERO REFERENCIA DEM 29 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS NEGRA NÚMERO REFERENCIA DEM 29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS VERDE NÚMERO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS VERDE NÚMERO REFERENCIA DEM 16 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS VERDE NÚMERO REFERENCIA DEM 16 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE GAFAS VERDE NÚMERO REFERENCIA DEM 16.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA BOSCOSO CON NAVAJA NÚMERO DE REFERENCIA DEM 5.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA BOSCOSO NÚMERO DE REFERENCIA DEM 5 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA BOSCOSO NÚMERO DE REFERENCIA DEM 5 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA BOSCOSO NÚMERO DE REFERENCIA DEM 5.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA NEGRA NÚMERO DE REFERENCIA DEM 30 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA NEGRA NÚMERO DE REFERENCIA DEM 30 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA NEGRA NÚMERO DE REFERENCIA DEM 30.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA NEGRA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA VERDE CON NAVAJA NÚMERO DE REFERENCIA DEM 17.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA VERDE NÚMERO DE REFERENCIA DEM 17 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA VERDE NÚMERO DE REFERENCIA DEM 17 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA VERDE NÚMERO DE REFERENCIA DEM 17.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA VERDE pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 55 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 55 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA ÁRIDO PIXELADO NÚMERO DE REFERENCIA DEM 55.jpg" />
+    <Content Include="imagenes\FUNDA DE NAVAJA ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA DE CUERO DE LA LEGIÓN O DE LA GUARDIA CIVIL NÚMERO DE REFERENCIA DEM 61 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA DE CUERO DE LA LEGIÓN O DE LA GUARDIA CIVIL NÚMERO DE REFERENCIA DEM 61 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA DE CUERO DE LA LEGIÓN O DE LA GUARDIA CIVIL NÚMERO DE REFERENCIA DEM 61.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA DE CUERO DE LA LEGIÓN O DE LA GUARDIA CIVIL pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE  ÁRIDO PIXELADO  NÚMERO REFERENCIA DEM 51 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE  ÁRIDO PIXELADO  NÚMERO REFERENCIA DEM 51 %284%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE  ÁRIDO PIXELADO  NÚMERO REFERENCIA DEM 51.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE  ÁRIDO PIXELADO pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE BOSCOSA NÚMERO REFERENCIA DEM 9 %282%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE BOSCOSA NÚMERO REFERENCIA DEM 9 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE BOSCOSA NÚMERO REFERENCIA DEM 9 %285%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE BOSCOSA pequena.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 34 %283%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 34 %284%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 34 %285%29.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE NEGRA NÚMERO REFERENCIA DEM 34.jpg" />
+    <Content Include="imagenes\FUNDA DE PISTOLA MULTIPLE NEGRA pequena.jpg" />
+    <Content Include="imagenes\Fundacubierto4piezaspequena.jpg" />
+    <Content Include="imagenes\Fundanavajaboscosopequena.jpg" />
+    <Content Include="imagenes\GORRA DE  OFICIAL DE LA ARMADA REFERENCIA GORRA- OFICIAL-ARMADA -SEMINUEV  %283%29.jpg" />
+    <Content Include="imagenes\GORRA DE  OFICIAL DE LA ARMADA REFERENCIA GORRA- OFICIAL-ARMADA -SEMINUEV %282%29.jpg" />
+    <Content Include="imagenes\GORRA DE  OFICIAL DE LA ARMADA REFERENCIA GORRA- OFICIAL-ARMADA -SEMINUEV.jpg" />
+    <Content Include="imagenes\gorraoficialarmadapequena.jpg" />
+    <Content Include="imagenes\iconfacebook.png" />
+    <Content Include="imagenes\icongooglebusiness.png" />
+    <Content Include="imagenes\iconwhatsapp.png" />
+    <Content Include="imagenes\iconyoutube.png" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2813%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2814%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2815%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2816%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2817%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2818%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2819%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2820%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2821%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2822%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM %2823%29.jpg" />
+    <Content Include="imagenes\LIQUIDACIÓN DE ARMY SURVIVAL ADVENTURE  LOTE DE PRODUCTOS DE DEM pequena.jpg" />
+    <Content Include="imagenes\Logo.png" />
+    <Content Include="imagenes\manguera flexible para bidon jerrican militar de gasolina.jpg" />
+    <Content Include="imagenes\Mangueraflexiblebidon.jpg" />
+    <Content Include="imagenes\Mangueraflexiblebidonpequena.jpg" />
+    <Content Include="imagenes\militar.jpg" />
+    <Content Include="imagenes\MOCHILA SOPORTE VITAL AVANZADO RESPIRATORIO %282%29.jpg" />
+    <Content Include="imagenes\MOCHILA SOPORTE VITAL AVANZADO RESPIRATORIO %283%29.jpg" />
+    <Content Include="imagenes\MOCHILA SOPORTE VITAL AVANZADO RESPIRATORIO %284%29.jpg" />
+    <Content Include="imagenes\MOCHILA SOPORTE VITAL AVANZADO RESPIRATORIO.jpg" />
+    <Content Include="imagenes\Mochilapequena.jpg" />
+    <Content Include="imagenes\NAVAJA DE CAMPAÑA VERDE CON EMBLEMA DE LA ARMADA ESPAÑOLA  NÚMERO DE REFERENCIA DEM 68 %283%29.jpg" />
+    <Content Include="imagenes\NAVAJA DE CAMPAÑA VERDE CON EMBLEMA DE LA ARMADA ESPAÑOLA NÚMERO DE REFERENCIA DEM 68 %282%29.jpg" />
+    <Content Include="imagenes\NAVAJA DE CAMPAÑA VERDE CON EMBLEMA DE LA ARMADA ESPAÑOLA NÚMERO DE REFERENCIA DEM 68.jpg" />
+    <Content Include="imagenes\Navajaarmadaespañolaverdepequena.jpg" />
+    <Content Include="imagenes\PAQUETE 5 FASTENER NÚMERO DE REFERENCIA DEM 70 %282%29.jpg" />
+    <Content Include="imagenes\PAQUETE 5 FASTENER NÚMERO DE REFERENCIA DEM 70 %283%29.jpg" />
+    <Content Include="imagenes\PAQUETE 5 FASTENER NÚMERO DE REFERENCIA DEM 70.jpg" />
+    <Content Include="imagenes\PAQUETE 5 FASTENER pequena.jpg" />
+    <Content Include="imagenes\PLATO MARMITA SARTÉN ACERO INOXIDABLE NÚMERO REFERENCIA DEM 65 %282%29.jpg" />
+    <Content Include="imagenes\PLATO MARMITA SARTÉN ACERO INOXIDABLE NÚMERO REFERENCIA DEM 65.jpg" />
+    <Content Include="imagenes\PLATO MARMITA SARTÉN ACERO INOXIDABLE pequena.jpg" />
+    <Content Include="imagenes\PLATO MARMITA SARTÉN ALUMINIO VERDE NÚMERO REFERENCIA DEM 66 %282%29.jpg" />
+    <Content Include="imagenes\PLATO MARMITA SARTÉN ALUMINIO VERDE NÚMERO REFERENCIA DEM 66.jpg" />
+    <Content Include="imagenes\Platomarmitasartenaluminioverdepequena.jpg" />
+    <Content Include="imagenes\policial.jpg" />
+    <Content Include="imagenes\Riñoneraboscosapequena.jpg" />
+    <Content Include="imagenes\semanasanta.jpg" />
+    <Content Include="imagenes\supervivencia.jpg" />
+    <Content Include="index.html" />
+    <Content Include="IniciarSesion.html" />
+    <Content Include="InicioSesion.aspx" />
+    <Content Include="Registrarse.aspx" />
+    <Content Include="script BASE DE DATOS TIENDA\CLIENTES.jpg" />
+    <Content Include="script BASE DE DATOS TIENDA\DIAGRAMA LIQUIDACION TIENDA ARMY SURVIVAL ADVENTURE.jpg" />
+    <Content Include="script BASE DE DATOS TIENDA\PEDIDOS.jpg" />
+    <Content Include="script BASE DE DATOS TIENDA\PRODUCTOS.jpg" />
+    <Content Include="script BASE DE DATOS TIENDA\Script BASE DE DATOS LIQUIDACION_TIENDA_ARMY_SURVIVAL_ADVENTURE.sql" />
+    <Content Include="script\jquery-3.6.0.min.js" />
+    <Content Include="Tienda.aspx" />
+    <Content Include="Tienda.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factura.aspx.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Factura.aspx.designer.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tienda.aspx.cs">
+      <DependentUpon>Tienda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda.aspx.designer.cs">
+      <DependentUpon>Tienda.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\js\lightbox-plus-jquery.min.map" />
+    <Content Include="dist\js\lightbox.min.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="javascript\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52270</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44313/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

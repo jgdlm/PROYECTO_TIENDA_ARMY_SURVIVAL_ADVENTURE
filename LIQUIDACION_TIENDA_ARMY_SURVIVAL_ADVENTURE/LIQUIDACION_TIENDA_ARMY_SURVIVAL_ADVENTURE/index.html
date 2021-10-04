@@ -1,0 +1,199 @@
+<!--Usuario: Jorge González De La Miar Fecha: 10 de Septiembre de 2021-->
+<!--Html y Bootstrap-->
+<!--PAGINA INICIO-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+	<!-- Etiquetas requeridas-->	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Jorge González De La Miar" />
+	<meta name="copyright" content="Army Survival Adventure" />
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Tienda-Online-Militar, Army-Survival-Adventure, MateriaL-Militar,Tienda-Online-Army-Survival-Adventure, Liquidacion-Productos-Stock-Tienda-Online-Army-Survival-Adventure, Militar, Policial, Supervivencia, Bushcraft, Cuchilleria, Airsoft, Semana-Santa" />
+	<meta name="description" content="Tienda Online Army Survival Adventure">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet"> 
+	<!--enlace al CSS Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!--enlace a imagenes de iconos-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- enlace al jQuery-->
+	<script src="script/jquery-3.6.0.min.js"></script>
+	<!-- enlace al JS Bootstrap-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!--enlace al css del pluggin de galeria de fotos-->
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<!--enlace al CSS propio-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<!--enlace al img Favicon-->
+	<link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon-96x96.png">
+	<title>Army Survival Adventure</title>
+	
+</head>
+<body>
+
+ 	<!--Encabezado-->
+	<header class="col-sm-12 col-xl-12">
+			<img src="imagenes/Logo.png" class="img-fluid col-sm-12 col-xl-12" title="LogoArmySurvivalAdventure" alt="LogoArmySurvivalAdventure" />
+	</header>
+	
+	<!-- Menu de Navegación-->
+	<nav class="navbar navbar-expand-sm menu">
+		<!-- Inicio con imagen de Logo Army Survival Adventure(home)-->
+		<a class="navbar-brand" href="index.html">
+			<img src="imagenes/favicon-96x96.png" class="logo rounded-circle" alt="logo" /> INICIO
+			</a>
+
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="Tienda.html">TIENDA</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="IniciarSesion.html"><span class="fa fa-user iconperfil"></span> INICIAR SESIÓN</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="CondicionesGeneralesCompra.html">CONDICIONES GENERALES DE LA COMPRA</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Contacto.html">CONTACTO</a>
+				  </li>  
+			</ul>
+	</nav>	
+
+	<!--Carrusel de Imagenes-->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+	<li data-target="#demo" data-slide-to="5"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/militar.jpg" alt="Militar" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>- MILITAR -</h3>
+        <a href="Tienda.html" class="btn">+ INFORMACIÓN</a>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/policial.jpg" alt="Policial" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>- POLICIAL -</h3>
+        <a href="Tienda.html" class="btn">+ INFORMACIÓN</a>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/airsoft.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>- AIRSOFT -</h3>
+        <a href="Tienda.html" class="btn">+ INFORMACIÓN</a>
+      </div>   
+    </div>
+	<div class="carousel-item">
+      <img src="imagenes/supervivencia.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>- SUPERVIVENCIA -</h3>
+        <a href="Tienda.html" class="btn">+ INFORMACIÓN</a>
+      </div>   
+    </div>
+	<div class="carousel-item">
+      <img src="imagenes/semanasanta.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>- SEMANA SANTA -</h3>
+        <a href="Tienda.html" class="btn">+ INFORMACIÓN</a>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+<!--Contenedor Principal-->
+	<div id="cuerpo" class="container-fluid col-lg-11">
+		<!--Migas de Pan-->
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item active">Estás en Inicio</li>
+			<li class="breadcrumb-item"><a href="Tienda.html">Tienda</a></li>
+			<li class="breadcrumb-item"><a href="IniciarSesion.html">Iniciar Sesion</a></li>
+			<li class="breadcrumb-item"><a href="CondicionesGeneralesCompra.html">Condiciones Generales de la Compra</a></li>
+			<li class="breadcrumb-item"><a href="Contacto.html">Contacto</a></li>
+		</ul>
+		<h1 class="col-sm-11 col-xl-11">PRESENTACIÓN:</h1>
+		<h2 class="col-sm-11 col-xl-11 bienvenido">BIENVENIDOS A ARMY SURVIVAL ADVENTURE:</h2>
+		<p class="bienvenida">
+			Tienda de Material Militar, Policial, Aventura, Cuchillería, Airsoft y Semana Santa. En Oviedo. Asturias.
+			Empresa que surge en Septiembre de 2018, como nuevo emprendedor empresario autónomo: Jorge González De La Miar, miembro de la Real Hermandad de Veteranos de las Fuerzas Armadas y de la Guardia Civil y Vigilante de Seguridad.
+			Con la idea de suministrar productos de calidad al profesional Militar, así como a Policías, Guardias Civiles y Seguridad privada.
+			Por CESE de Actividad empresarial en Septiembre de 2019, ponemos a disposición de los clientes la VENTA de LIQUIDACIÓN DEL STOCK DE PRODUCTOS de la Tienda Online ARMY SURVIVAL ADVENTURE, que podrán realizar la compra a través de esta página web desarrollada por Jorge González De La Miar en ASP web.NET hasta FIN DE EXISTENCIAS DEL STOCK.
+			Los productos han sido fabricados en Camarena, Toledo, España, por la Extinguida Empresa DEM (DESARROLLO Y EQUIPOS MILITARES), son de calidad y de durabilidad. Esta empresa suministraba mediante concurso estatal la distribución de material militar al Ministerio de Defensa Español.
+		</p>
+
+		<div class="col-sm-6 col-xl-6">
+				<video controls=controls class="img-fluid">
+					<source src="video/Fuerzas Armadas Españolas (HD).mp4" type="video/mp4" />
+				</video>
+		</div>
+		
+		
+
+
+
+
+	
+
+
+</div><!--Fin del Div Container (Contenido de la página)-->
+	<!--Paginación-->
+	<ul class="pagination pagination-sm row justify-content-end">
+		<li class="page-item disabled"><a class="page-link" href="index.aspx">Anterior</a></li>
+		<li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+		<li class="page-item"><a class="page-link" href="Tienda.html">2</a></li>
+		<li class="page-item"><a class="page-link" href="IniciarSesion.html">3</a></li>
+		<li class="page-item"><a class="page-link" href="CondicionesGeneralesCompra.html">4</a></li>
+		<li class="page-item"><a class="page-link" href="Contacto.html">5</a></li>
+		<li class="page-item"><a class="page-link" href="Tienda.html">Siguiente</a></li>
+	</ul>
+
+	<!--Pie de Página-->
+<footer>
+	<div class="container-sm">
+		<!--Copyright-->
+		<span class="float-left">&copy; Copyright 2021, ARMY SURVIVAL ADVENTURE &reg;</span>
+		<!--Redes Sociales-->	
+		 <div class="float-right">
+				<a href="https://www.facebook.com/armysurvivaladventure/shop/?ref_code=mini_shop_page_card_cta&ref_surface=page">
+				<img src="imagenes/iconfacebook.png" class="redessociales rounded" title="Facebook Army Survival Adventure" alt="social" />
+				</a>
+						
+				<a href="https://www.youtube.com/channel/UCmGTtBKuOz_pMRkEAbxBQQw?view_as=subscriber">
+				<img src="imagenes/iconyoutube.png" class="redessociales" title="Youtube Army Survival Adventure" alt="social" />
+				</a>
+
+				<a href="https://api.whatsapp.com/send/?phone=34617603097&text&app_absent=0">
+				<img src="imagenes/iconwhatsapp.png" class="redessociales" title="Whatsapp Army Survival Adventure" alt="social" />
+				</a>
+
+				<a href="https://www.google.es/maps/place/ARMY+SURVIVAL+ADVENTURE/@43.3874028,-5.8259291,2036m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2bb53ce37d5287eb!8m2!3d43.3874028!4d-5.8259291">
+				<img src="imagenes/icongooglebusiness.png" class="redessociales" title="Google Business Army Survival Adventure" alt="social" />
+				</a>
+		 </div>	
+	</div>	
+</footer>
+
+<!--Enlace al js del plugin de la galería-->
+<script src="dist/js/lightbox.js"></script>
+</body>
+</html>
